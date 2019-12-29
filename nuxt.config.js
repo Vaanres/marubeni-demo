@@ -73,32 +73,10 @@ export default {
         })
       }
 
-      // config.resolve.alias.TweenLite = path.resolve(
-      //   'node_modules',
-      //   'gsap/src/uncompressed/TweenLite.js'
-      // )
-      // config.resolve.alias.TweenMax = path.resolve(
-      //   'node_modules',
-      //   'gsap/src/uncompressed/TweenMax.js'
-      // )
-      // config.resolve.alias.TimelineLite = path.resolve(
-      //   'node_modules',
-      //   'gsap/src/uncompressed/TimelineLite.js'
-      // )
-      // config.resolve.alias.TimelineMax = path.resolve(
-      //   'node_modules',
-      //   'gsap/src/uncompressed/TimelineMax.js'
-      // )
-
       config.resolve.alias.ScrollMagic = path.resolve(
         'node_modules',
         'scrollmagic/scrollmagic/uncompressed/ScrollMagic.js'
       )
-
-      // config.resolve.alias['animation.gsap'] = path.resolve(
-      //   'node_modules',
-      //   'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js'
-      // )
 
       config.resolve.alias['debug.addIndicators'] = path.resolve(
         'node_modules',
