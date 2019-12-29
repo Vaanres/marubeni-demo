@@ -31,6 +31,8 @@ a.animated-link {
 }
 
 .section {
+  min-height: 100vh;
+
   &-spacing {
     padding-top: 10rem;
     padding-bottom: 10rem;
@@ -47,6 +49,12 @@ a.animated-link {
       )
       2%;
   }
+}
+
+.sub-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
 }
 
 .dots {
