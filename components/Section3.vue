@@ -8,15 +8,18 @@
           <h2 class="title mb-0">to people</h2>
         </div>
       </div>
-      <div class="gallery">
-        <div class="gallery-container">
-          <div class="gallery-item"></div>
-          <div class="gallery-item"></div>
-          <div class="gallery-item"></div>
-          <div class="gallery-item"></div>
-          <div class="gallery-item"></div>
-          <div class="gallery-item"></div>
-        </div>
+
+      <div class="v-container">
+        <ul class="flex-container">
+          <li class="flex-item">1</li>
+          <li class="flex-item">2</li>
+          <li class="flex-item">3</li>
+          <li class="flex-item">4</li>
+          <li class="flex-item">5</li>
+          <li class="flex-item">6</li>
+          <li class="flex-item">7</li>
+          <li class="flex-item">8</li>
+        </ul>
       </div>
     </div>
 
@@ -31,18 +34,29 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.gallery {
-  //overflow: hidden;
+.v-container {
+  background-color: #e8eaf6;
+  width: 100%;
+  overflow-x: auto;
 
-  &-container {
-  }
+  .flex-container {
+    list-style: none;
+    padding: 0;
+    margin: 12px;
+    display: inline-flex;
 
-  &-item {
-    display: inline-block;
-    width: calc(100vw / 4);
-    height: calc(100vw / 4);
+    .flex-item {
+      background-color: #c5cae9;
+      width: 150px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-    background-color: gray;
+      &.flex-item:not(:last-of-type) {
+        margin-right: 12px;
+      }
+    }
   }
 }
 </style>
