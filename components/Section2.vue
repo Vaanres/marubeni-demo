@@ -1,6 +1,6 @@
 <template>
   <section
-    class="section section-1 d-flex justify-content-center align-items-center"
+    class="section section-2 d-flex justify-content-center align-items-center"
   >
     <div class="container">
       <div class="section-header">
