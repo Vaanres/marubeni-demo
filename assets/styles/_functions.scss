@@ -1,0 +1,28 @@
+@mixin animated-link() {
+  --link-color: var(--primary);
+  --link-width: 0%;
+
+  color: var(--link-color);
+
+  position: relative;
+  text-decoration: none !important;
+  transition: all 0.3s var(--ease-primary);
+  display: inline-block;
+
+  &:before {
+    content: '';
+    position: absolute;
+    transition: all 0.3s var(--ease-primary);
+    bottom: 0;
+    display: block;
+    height: 1px;
+    background-color: var(--link-color);
+    width: var(--link-width);
+  }
+
+  &:hover,
+  &:focus {
+    --link-color: var(--primary);
+    --link-width: 100%;
+  }
+}

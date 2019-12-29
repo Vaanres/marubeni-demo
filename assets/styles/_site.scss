@@ -1,0 +1,73 @@
+* {
+  touch-action: manipulation;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  // Hide Scroll Bar
+  ::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+  }
+
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+
+  &.dark-mode {
+    background-color: black;
+  }
+}
+
+a.animated-link {
+  @include animated-link();
+}
+
+.section {
+  &-spacing {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  &-divider {
+    border-width: 1px 0 0;
+    border-style: solid;
+    border-image: linear-gradient(
+        90deg,
+        rgba(5, 5, 5, 0),
+        #e6e6e6 50%,
+        rgba(230, 230, 230, 0) 100%
+      )
+      2%;
+  }
+}
+
+.dots {
+  &::before {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    content: '';
+
+    background-image: url('~assets/svgs/dot.svg');
+    background-attachment: fixed;
+    background-size: 1rem;
+    opacity: 0.2;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
