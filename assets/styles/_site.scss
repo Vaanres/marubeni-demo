@@ -26,12 +26,21 @@ body {
   }
 }
 
-a.animated-link {
+a.animated-link,
+.animated-link {
   @include animated-link();
 }
 
 .section {
   min-height: 100vh;
+
+  &-top {
+    padding-top: 10rem;
+  }
+
+  &-bottom {
+    padding-bottom: 10rem;
+  }
 
   &-spacing {
     padding-top: 10rem;

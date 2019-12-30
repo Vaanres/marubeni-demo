@@ -1,30 +1,44 @@
 <template>
-  <div class="container mb-5">
+  <div class="container">
     <div class="divider">
       <hr />
     </div>
     <div class="mb-3">
       <ul class="nav">
-        <li class="nav-item mr-5">About us</li>
-        <li class="nav-item mr-5">Terms & Conditions</li>
-        <li class="nav-item mr-5">Privacy</li>
-        <li class="nav-item mr-5">Contact us</li>
+        <li class="nav-item mr-5 ">
+          <a href="#" class="animated-link text-white">About us</a>
+        </li>
+        <li class="nav-item mr-5">
+          <a href="#" class="animated-link text-white">Terms & Conditions</a>
+        </li>
+        <li class="nav-item mr-5">
+          <a href="#" class="animated-link text-white">Privacy</a>
+        </li>
+        <li class="nav-item mr-5">
+          <a href="#" class="animated-link text-white">Contact us</a>
+        </li>
       </ul>
     </div>
     <div class="d-flex justify-content-between">
-      <ul class="nav">
+      <ul class="nav socials">
         <li class="nav-item mr-4">
-          <font-awesome-icon :icon="['fab', 'twitter']" />
+          <a href="#" class="animated-link text-white">
+            <font-awesome-icon :icon="['fab', 'twitter']"
+          /></a>
         </li>
         <li class="nav-item mr-4">
-          <font-awesome-icon :icon="['fab', 'facebook-f']" />
+          <a href="#" class="animated-link text-white"
+            ><font-awesome-icon :icon="['fab', 'facebook-f']"
+          /></a>
         </li>
         <li class="nav-item mr-4">
-          <font-awesome-icon :icon="['fab', 'linkedin-in']" />
+          <a href="#" class="animated-link text-white"
+            ><font-awesome-icon :icon="['fab', 'linkedin-in']"
+          /></a>
         </li>
       </ul>
       <div>
-        <span>
+        <span class="text-secondary">
           © 2019 Marubeni. All rights served
         </span>
       </div>
@@ -38,4 +52,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+hr {
+  background-color: transparentize($color: white, $amount: 0.8);
+}
+</style>
