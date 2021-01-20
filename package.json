@@ -21,7 +21,7 @@
     "bootstrap": "^4.4.1",
     "@nuxtjs/style-resources": "^1.0.0",
     "charming": "^3.0.1",
-    "gsap": "^3.0.4",
+    "gsap": "^3.6.0",
     "lodash": "^4.17.15",
     "nuxt-webfontloader": "^1.1.0",
     "scrollmagic": "^2.0.7",
